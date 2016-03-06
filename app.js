@@ -232,7 +232,7 @@ balloonFactory.prototype = {
     // disabling click to bubble up to game
     // console.log('balloon is popping');
     event.stopPropagation();
-    // gameObject.addToScore();
+    gameObject.addToScore();
     elballoonArray.pop();
     // including the jquery ui explosion
     $(this).toggle('explode');
