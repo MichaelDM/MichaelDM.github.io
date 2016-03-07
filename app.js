@@ -113,7 +113,7 @@ var gameObject = {
       // creating unique balloon names
       var balloonName = 'balloonName'+i;
       // creating new balloon object based on ballonFactory
-      var balloonName = new balloonFactory();
+      balloonName = new balloonFactory();
       //adding unique properties to balloons
       balloonName.name = 'balloon'+i;
       balloonName.createDiv(i);
@@ -141,8 +141,8 @@ var gameObject = {
     opacityStatus = false;
     intervalballoonArray = [];
     elballoonArray = [];
-    gameTime = (countDown*1000)+delayTimerStart,
-    firstTime = true,
+    gameTime = (countDown*1000)+delayTimerStart;
+    firstTime = true;
     speed -= (50/gameLevel);
     if (speed<=0){
       speed = 1;
@@ -153,10 +153,10 @@ var gameObject = {
     elInvisible.classList.add('invisibleOn');
     highScoreObject.setHighScore();
     opacityStatus = false;
-    speed = initialSpeed,
-    totalScore = 0,
-    gameLevel = 0,
-    balloonNumber = 0,
+    speed = initialSpeed;
+    totalScore = 0;
+    gameLevel = 0;
+    balloonNumber = 0;
     gameTime = (countDown*1000)+delayTimerStart;
     gameObject.removeBallons();
     elTimer.classList.toggle('timer-color-slider');
@@ -176,14 +176,14 @@ var gameObject = {
 
 // setting factory functions
 function balloonFactory (){
-  this.element = "",
-  this.dir1 = -1,
-  this.dir2 = -1,
-  this.left = gWidth/2,
-  this.bottom = gHeight/2,
-  this.rotationY = 0,
-  this.rotationX = 0,
-  this.firstTime = true,
+  this.element = "";
+  this.dir1 = -1;
+  this.dir2 = -1;
+  this.left = gWidth/2;
+  this.bottom = gHeight/2;
+  this.rotationY = 0;
+  this.rotationX = 0;
+  this.firstTime = true;
   this.startedMoving = false;
 }
 // setting prototypes
@@ -237,11 +237,6 @@ balloonFactory.prototype = {
     // including the jquery ui explosion
     $(this).toggle('explode');
     this.remove();
-  },
-  //generate random number betwee 1 and 4
-  randomSelection : function(){
-    var direction = ~~((Math.random()*4)+1);
-    return direction;
   }
 };
 
