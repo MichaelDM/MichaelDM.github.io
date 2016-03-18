@@ -298,8 +298,7 @@ function test (response){
   for (var i=0; i< 1; i++){
       console.log(response.response.results[i].apiUrl);
       $.ajax({
-        url: response.response.results[i].apiUrl + '?api-key=d677996f-4c3f-4ee0-9969-ab5bf08a0e7',
-        dataType: 'jsonp'
+        url: response.response.results[i].apiUrl + '?api-key=d677996f-4c3f-4ee0-9969-ab5bf08a0e7'
       }).then(function (x) { console.log('text from link',i,' is: ', x); });
   }
 
