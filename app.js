@@ -1,3 +1,5 @@
+
+
 // setting variables
 //DOM variables
 var elGame = document.getElementById('game'),
@@ -273,4 +275,32 @@ function playGame(){
   setTimeout(function(){elGame.addEventListener('click', gameObject.deductFromScore);}, delayTimerStart+500);
   // making sure can't call game with keydown once the game is playing
   gameInProgress = true;
+}
+
+
+
+
+
+//test
+function testG (){
+  $.ajax({
+    url: 'http://content.guardianapis.com/search?q=israel&api-key=d677996f-4c3f-4ee0-9969-ab5bf08a0e78',
+    success: function(response){
+      responseG = response;
+      console.log('response from guardian is ',response);
+      test(response);
+    }
+  });
+}
+testG();
+
+function test (response){
+  for (var i=0; i< 1; i++){
+      console.log(response.response.results[i].apiUrl);
+      $.ajax({
+        url: response.response.results[i].apiUrl + '?api-key=d677996f-4c3f-4ee0-9969-ab5bf08a0e7',
+        dataType: 'jsonp'
+      }).then(function (x) { console.log('text from link',i,' is: ', x); });
+  }
+
 }
