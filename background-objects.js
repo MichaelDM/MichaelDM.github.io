@@ -1,16 +1,15 @@
 // Game backgrounds for each level
 var backgroundObject = {
-  evolution: 'http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2015/07/evolution.jpg',
-  shark : 'http://stories.gettyimages.com/wp-content/uploads/2015/08/GettyImages-557187411-11.jpg',
-  boccioni: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Umberto_Boccioni_-_Plastische_Formen_eines_Pferdes.jpeg',
-  lachapelle : 'http://brothersartgallery.com/bag/wp-content/uploads/2013/09/David-Lachapelle-quadro1.jpg',
-  monet : 'https://upload.wikimedia.org/wikipedia/commons/d/da/Claude_Monet,_Saint-Georges_majeur_au_cr%C3%A9puscule.jpg',
-  mapplethorpe: 'http://www.adhikara.com/robert-mapplethorpe/6-mapplethorpe.jpg',
-  flowerGarden: 'http://www.worldfortravel.com/wp-content/uploads/2012/07/Wisteria-Tunnel-Fuji.jpg',
-  nature: 'http://3.bp.blogspot.com/-K8JNPbVQ96g/UiL6Bi6TIwI/AAAAAAAAA08/MBh7xW75nB0/s1600/ghost-recon-future-solr-island-wonder-of-the-world-hd-px.jpg',
-  cosmos: 'http://cdn.spacetelescope.org/archives/images/large/heic1509a.jpg',
-  paris: 'http://pgoh13.com/champs_old.jpg',
-
+  evolution: 'img/backgroundObject/evolution.jpg',
+  shark : 'img/backgroundObject/shark.jpg',
+  boccioni: 'img/backgroundObject/boccioni.jpeg',
+  lachapelle : 'img/backgroundObject/lachapelle.jpg',
+  monet : 'img/backgroundObject/monet.jpg',
+  mapplethorpe: 'img/backgroundObject/mapplethorpe.jpg',
+  flowerGarden: 'img/backgroundObject/flowerGarden.jpg',
+  nature: 'img/backgroundObject/nature.jpg',
+  cosmos: 'img/backgroundObject/cosmos.jpg',
+  paris: 'img/backgroundObject/paris.jpg',
   assignLevelToBackground : function (level){
     var levelString = level.toString(),
         levelNumLength = levelString.length;
@@ -69,17 +68,16 @@ var backgroundObject = {
 
 // Balloon Background for each level
 var balloonBackgroundObject = {
-  evolution: 'http://thumbs.modthesims2.com/img/4/3/2/4/7/1/MTS_Beo-929924-matrix.jpg',
-  shark : 'http://www.siamaquaticadventures.com/images/gallery/gallery-1439528848-portbigpic5.jpg',
-  boccioni: 'https://londonartreviews.files.wordpress.com/2015/12/web-01.jpg?w=293&h=300',
-  lachapelle : 'https://alauristoncps.files.wordpress.com/2012/10/david-lachapelle-courtney-love.jpg',
-  monet : 'http://www.intermonet.com/prints/w1077t300.jpg',
-  mapplethorpe: 'http://www.photology.com/assets/images/MAPPLETHORPE%20Robert/MAPPLETHORPE%203.jpg',
-  flowerGarden: 'http://www.3drivers.com/upload/iblock/144/japanese-vase-c-01.jpg',
-  nature: 'https://s-media-cache-ak0.pinimg.com/236x/52/eb/33/52eb339cb5f0392448c232e2a6f5da27.jpg',
-  cosmos: 'http://orig14.deviantart.net/3632/f/2008/151/4/a/the_planet_earth_by_technoking.jpg',
-  paris: 'http://blogs.kcrw.com/rhythmplanet/wp-content/uploads/2015/06/Robert-Doisneau.jpg',
-
+  evolution: 'img/balloonBackgroundObject/evolution.jpg',
+  shark : 'img/balloonBackgroundObject/shark.jpg',
+  boccioni: 'img/balloonBackgroundObject/boccioni.jpg',
+  lachapelle : 'img/balloonBackgroundObject/lachapelle.jpg',
+  monet : 'img/balloonBackgroundObject/monet.jpg',
+  mapplethorpe: 'img/balloonBackgroundObject/mapplethorpe.jpg',
+  flowerGarden: 'img/balloonBackgroundObject/flowerGarden.jpg',
+  nature: 'img/balloonBackgroundObject/nature.jpg',
+  cosmos: 'img/balloonBackgroundObject/cosmos.jpg',
+  paris: 'img/balloonBackgroundObject/paris.jpg',
   assignLevelToBackground : function (level){
     var levelString = level.toString(),
         levelNumLength = levelString.length;
